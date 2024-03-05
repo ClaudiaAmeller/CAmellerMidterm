@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Images Side by Side</h2>
+<p>How to create side-by-side images with the CSS float property:</p>
+
+<div class="row">
+  <div class="column">
+    <img src="images/Img1.png" alt="Shih tzu dog sitting between planters" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/Img2.png" alt="hih tzu dog sitting behind plant" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/Img3.png" alt="hih tzu dog on a bridge" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>
